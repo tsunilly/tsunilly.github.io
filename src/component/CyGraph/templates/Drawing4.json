@@ -1,0 +1,64 @@
+[
+  {
+    "id": "CustomerLAN",
+    "data": {
+      "type": "cLAN",
+      "connections": [
+        {
+          "target": "RTR-0",
+          "ip": "",
+          "interface": ""
+        }
+      ]
+    },
+    "cydata": {
+      "position": {
+        "x": 400,
+        "y": 300
+      }
+    }
+  }, {
+    "id": "RTR-0",
+    "data": {
+      "type": "router",
+      "rtrId": "0",
+      "connections": [
+        {
+          "target": "CustomerLAN",
+          "ip": "1.0.0.0",
+          "interface": "eth0"
+        }, {
+          "target": "VHID-0",
+          "ip": "2.0.0.0",
+          "interface": "eth1"
+        }
+      ]
+    },
+    "cydata": {
+      "position": {
+        "x": 400,
+        "y": 100
+      }
+    }
+  }, {
+    "id": "VHID-0",
+    "data": {
+      "type": "vhid",
+      "vhid": "Sample VHID",
+      "name": "Sample VHID",
+      "connections": [
+        {
+          "target": "RTR-0",
+          "ip": "0.0.0.0",
+          "interface": "eth0"
+        }
+      ]
+    },
+    "cydata": {
+      "position": {
+        "x": 0,
+        "y": 100
+      }
+    }
+  }
+]

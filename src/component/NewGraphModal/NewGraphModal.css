@@ -1,0 +1,21 @@
+.selBox {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  /* cursor: pointer; */
+
+  background-color: rgba(255,255,255,1);
+  transition: 0.8s;
+}
+
+.selBox:hover {
+  background-color: rgba(0,0,0,0.05);
+  color: red;
+  /* background-color: red; */
+  cursor: pointer;
+}
+
+.selBox > img {
+  width: 100%;
+  height: 200px;
+}

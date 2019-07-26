@@ -1,0 +1,57 @@
+[
+  {
+    "group": "nodes",
+    "data": {
+      "id": "Customer LAN",
+      "type": "cLAN",
+      "lan_ip": "0.0.0.0",
+      "lan_interface": "eth0"
+    },
+    "position": {
+      "x": 400,
+      "y": 300
+    }
+  }, {
+    "group": "nodes",
+    "data": {
+      "id": "RTR-0",
+      "type": "router",
+      "rtrId": "0",
+      "wanIp": "0.0.0.0",
+      "wanInterface": "eth0"
+    },
+    "position": {
+      "x": 400,
+      "y": 100
+    }
+  }, {
+    "group": "nodes",
+    "data": {
+      "id": "VHID-0",
+      "type": "vhid",
+      "vhid": "Sample VHID",
+      "peIp": "0.0.0.0",
+      "peInterface": "eth0"
+    },
+    "position": {
+      "x": 0,
+      "y": 100
+    }
+  }, {
+    "group": "edges",
+    "data": {
+      "source": "Customer LAN",
+      "target": "RTR-0",
+      "type": ""
+    }
+  }, {
+    "group": "edges",
+    "data": {
+      "source": "RTR-0",
+      "target": "VHID-0",
+      "type": "vcid",
+      "_networkIp": "0.0.0.0",
+      "_vcid": "SAMPLE-VCID"
+    }
+  }
+]
